@@ -54,8 +54,8 @@ class ThemeProvider with ChangeNotifier {
   ThemeColor themeMode() {
     return ThemeColor(
       gradient: [
-        if (isLightTheme) ...[Color(0xDDFF0080), Color(0xDDFF8C00)],
-        if (!isLightTheme) ...[Color(0xFF8983F7), Color(0xFFA3DAFB)]
+        if (isLightTheme) ...[Color(0xDDFF4500), Color(0xDDFFA500)],
+        if (!isLightTheme) ...[Color(0xFF4682B4), Color(0xFF66CDAA)]
       ],
       toggleBackgroundColor:
           isLightTheme ? Color(0xFFe7e7e8) : Color(0xFF222029),

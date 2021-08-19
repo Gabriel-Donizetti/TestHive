@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:test_hive/components/animated_toggle.dart';
 import 'package:test_hive/providers/theme_provider.dart';
 
 class HomePageWidget extends StatefulWidget {
@@ -17,11 +18,9 @@ class _HomePageWidgetState extends State<HomePageWidget> {
     //Acesso aos themas
     final themeProvider = Provider.of<ThemeProvider>(context);
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Home Page'),
-      ),
       body: SafeArea(
           child: Container(
+        alignment: Alignment.center,
         margin: EdgeInsets.only(top: height * 0.1),
         child: Column(
           children: [
@@ -31,7 +30,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
               decoration: BoxDecoration(
                   shape: BoxShape.circle,
                   gradient: LinearGradient(
-                      colors: themeProvider.themeMode().gradient,
+                      colors: themeProvider.themeMode().gradient!,
                       begin: Alignment.bottomLeft,
                       end: Alignment.topRight)),
             ),
@@ -52,7 +51,21 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                 'Day or Nigth customize interface',
                 textAlign: TextAlign.center,
               ),
-            )
+            ),
+            SizedBox(
+              height: height * 0.1,
+            ),
+            AnimatedToggleWidget(
+              values: ['Light', 'Dark'],
+              onToggleCallBack: (v) async {
+                await themeProvider.toogleThemeData();
+                setState(() {});
+              },
+              onToggleCallback: (v) async {
+                await themeProvider.toogleThemeData();
+                setState(() {});
+              },
+            ),
           ],
         ),
       )),

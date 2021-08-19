@@ -51,9 +51,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: widget.themeProvider.themeData(),
       home: HomePageWidget(),
     );
   }
