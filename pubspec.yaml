@@ -23,6 +23,11 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  hive: ^1.4.1+1
+  #used to store local state
+  path_provider: ^1.6.5
+  provider: ^4.3.1
+   #used to manage global app state
 
 
   # The following adds the Cupertino Icons font to your application.
