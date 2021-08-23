@@ -13,6 +13,7 @@ Fazendo assim a função main ser assíncrona -
 ![image](https://user-images.githubusercontent.com/69644547/130245337-334294fa-2d9a-4b2c-a069-d0c7e770730a.png)
 
 Depois de setado a função main utiliza-se a função - 
+
 ![image](https://user-images.githubusercontent.com/69644547/130266548-b549022b-a9f3-4737-a613-6a7f5c89b874.png)
 
 Para guardar o path até a pasta onde será guardado as variaveis do app, depois para inicializar o Hive utiliza-se a seguinte função - 
