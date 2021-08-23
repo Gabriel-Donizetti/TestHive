@@ -17,6 +17,7 @@ Depois de setado a função main utiliza-se a função -
 ![image](https://user-images.githubusercontent.com/69644547/130266548-b549022b-a9f3-4737-a613-6a7f5c89b874.png)
 
 Para guardar o path até a pasta onde será guardado as variaveis do app, depois para inicializar o Hive utiliza-se a seguinte função - 
+
 ![image](https://user-images.githubusercontent.com/69644547/130267356-1df304ec-9623-410d-9e5c-0c0318edd39f.png)
 
 # Hive
