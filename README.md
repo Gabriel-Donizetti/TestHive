@@ -33,6 +33,7 @@ Hive.get é a função que permite acessar os dados de uma coluna da table 'sett
 
 Abrindo a table settings com a função openBox, com o método Hive.put passamos os parametros a serem adicionados an table - ![image](https://user-images.githubusercontent.com/69644547/130486801-57edc7e7-3ad6-47e6-851d-5eec721c4489.png)
 
-E depois na var/coluna que deser ser adicionada
+E depois na var/coluna que deser ser adicionada - ![image](https://user-images.githubusercontent.com/69644547/130487395-ad536dcd-b5ed-46cf-8491-32a0d3b8a03c.png)
+
 
 
